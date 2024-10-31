@@ -72,6 +72,8 @@ h1 {
   flex-direction: column;
   padding-left: 100px;
   padding-top: 50px;
+  height: 460px;
+  border-bottom: 2px solid lightgray;
 }
 .trendingHeader {
   display: flex;
@@ -88,14 +90,13 @@ h1 {
 .article {
   margin-top: 20px;
   display: flex;
+  flex: 0 0 calc(33.33% - 10px);
 }
 .article span p {
   margin-right: 50px;
   font-size: 50px;
   color: gray;
   opacity: 0.3;
-
-  margin-right: 50px;
 }
 .info {
   display: flex;
@@ -107,13 +108,13 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 13px;
 }
 .img img {
   border-radius: 50%;
 }
-.name {
-}
-.date {
+
+.title {
   font-weight: 900;
   font-size: 1.5rem;
 }
@@ -121,8 +122,14 @@ h1 {
   color: rgb(175, 173, 173);
 }
 .trendingHeader p {
+  font-size: 1.3rem;
   letter-spacing: 1.5px;
 }
 .trendingHeader img {
   height: 45px;
+}
+.orderTrend {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 50px;
 }
