@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0; /* Rimuove il padding predefinito */
+  overflow-x: hidden; /* Nasconde lo scroll orizzontale */
+}
+header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  background-color: #ffc017;
+  justify-content: space-between;
+
+  align-items: center;
+  border-bottom: solid 2px lightgray;
+}
+.logo,
+.link {
+  margin: 0 150px;
+}
+.link {
+}
+.button {
+  background-color: #ffc017;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.colorButton {
+  border-radius: 20px;
+  padding-block: 11px;
+  color: whitesmoke;
+  background-color: #191919;
+  padding-inline: 15px;
+  cursor: pointer;
+}
+
+.curious {
+  height: 280px;
+  width: 100%;
+  display: flex;
+  padding-left: 150px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #ffc017;
+}
+h1 {
+  color: #191919;
+  font-size: 100px;
+}
+.curious h3 {
+  font-size: 1.6rem;
+  font-family: "roboto", sans-serif;
+}
+.curious button {
+  padding-inline: 30px;
+}
+.stayCurious {
+  display: flex;
+  background-color: #ffc017;
+}
