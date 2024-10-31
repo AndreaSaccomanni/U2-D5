@@ -3,6 +3,9 @@ body {
   padding: 0; /* Rimuove il padding predefinito */
   overflow-x: hidden; /* Nasconde lo scroll orizzontale */
 }
+main {
+  font-family: "roboto", sans-serif;
+}
 header {
   height: 70px;
   width: 100%;
@@ -15,7 +18,7 @@ header {
 }
 .logo,
 .link {
-  margin: 0 150px;
+  margin: 0 100px;
 }
 .link {
 }
@@ -38,14 +41,15 @@ header {
   height: 280px;
   width: 100%;
   display: flex;
-  padding-left: 150px;
+  padding-left: 100px;
   justify-content: space-evenly;
   flex-direction: column;
   background-color: #ffc017;
+  padding-top: 30px;
 }
 h1 {
   color: #191919;
-  font-size: 100px;
+  font-size: 80px;
 }
 .curious h3 {
   font-size: 1.6rem;
@@ -57,4 +61,68 @@ h1 {
 .stayCurious {
   display: flex;
   background-color: #ffc017;
+  height: 350px;
+}
+.svg-image {
+  height: 100%;
+  width: auto;
+}
+.trending {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+.trendingHeader {
+  display: flex;
+  gap: 20px;
+  /* justify-content: center; */
+  align-items: center;
+}
+.trending p {
+  font-family: "roboto", sans-serif;
+  padding-top: 6px;
+  padding-left: 6px;
+  font-weight: bold;
+}
+.article {
+  margin-top: 20px;
+  display: flex;
+}
+.article span p {
+  margin-right: 50px;
+  font-size: 50px;
+  color: gray;
+  opacity: 0.3;
+
+  margin-right: 50px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.img img {
+  border-radius: 50%;
+}
+.name {
+}
+.date {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.time {
+  color: rgb(175, 173, 173);
+}
+.trendingHeader p {
+  letter-spacing: 1.5px;
+}
+.trendingHeader img {
+  height: 45px;
 }
