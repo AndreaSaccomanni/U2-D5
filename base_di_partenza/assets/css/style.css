@@ -72,7 +72,7 @@ h1 {
   flex-direction: column;
   padding-left: 100px;
   padding-top: 50px;
-  height: 460px;
+  height: 690px;
   border-bottom: 2px solid lightgray;
 }
 .trendingHeader {
@@ -120,6 +120,9 @@ h1 {
 }
 .time {
   color: rgb(175, 173, 173);
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 .trendingHeader p {
   font-size: 1.3rem;
@@ -132,4 +135,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   max-height: 50px;
+}
+.time img {
+  height: 30px;
 }
