@@ -7,14 +7,13 @@ main {
   font-family: "roboto", sans-serif;
 }
 header {
-  height: 70px;
+  height: 80px;
   width: 100%;
   display: flex;
   background-color: #ffc017;
   justify-content: space-between;
-
   align-items: center;
-  border-bottom: solid 2px lightgray;
+  border-bottom: solid 1px black;
 }
 .logo,
 .link {
@@ -36,6 +35,9 @@ button {
   background-color: #191919;
   padding-inline: 15px;
   cursor: pointer;
+}
+.orderTrend .article:nth-last-child(-n + 4) .img img {
+  border-radius: 10px;
 }
 
 .curious {
@@ -142,7 +144,7 @@ h1 {
   max-height: 50px;
 }
 .time img {
-  height: 30px;
+  height: 25px;
 }
 .otherArticle {
   margin-top: 35px;
@@ -157,6 +159,7 @@ h1 {
   font-weight: normal;
   color: #777373;
 }
+
 .otherArticle .img img {
   height: 40px;
   width: 40px;
@@ -254,6 +257,7 @@ hr {
 }
 hr {
   margin-top: 50px;
+  width: 470px;
   height: 1.8px;
   background-color: rgb(219 205 205 / 60%);
   border: none;
@@ -264,7 +268,7 @@ hr {
 }
 .links {
   display: flex;
-  gap: 30px;
+  gap: 32px;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 35px;
