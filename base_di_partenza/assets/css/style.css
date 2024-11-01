@@ -20,7 +20,8 @@ header {
 .link {
   margin: 0 100px;
 }
-.link {
+button {
+  cursor: pointer;
 }
 .button {
   background-color: #ffc017;
@@ -72,7 +73,7 @@ h1 {
   flex-direction: column;
   padding-left: 100px;
   padding-top: 50px;
-  height: 690px;
+  height: 470px;
   border-bottom: 2px solid lightgray;
 }
 .trendingHeader {
@@ -81,7 +82,7 @@ h1 {
 
   align-items: center;
 }
-.trending p {
+.article p {
   font-family: "roboto", sans-serif;
   padding-top: 6px;
   padding-left: 6px;
@@ -101,7 +102,7 @@ h1 {
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   gap: 15px;
 }
 .img {
@@ -118,6 +119,9 @@ h1 {
   font-weight: 900;
   font-size: 1.5rem;
 }
+.name span {
+  color: #777373;
+}
 .time {
   color: rgb(175, 173, 173);
   display: flex;
@@ -125,8 +129,9 @@ h1 {
   align-items: center;
 }
 .trendingHeader p {
-  font-size: 1.3rem;
-  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
 }
 .trendingHeader img {
   height: 45px;
@@ -138,4 +143,129 @@ h1 {
 }
 .time img {
   height: 30px;
+}
+.otherArticle {
+  margin-top: 35px;
+  padding-left: 100px;
+}
+.otherArticle .subtitle {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+.otherArticle .time p {
+  font-weight: normal;
+  color: #777373;
+}
+.otherArticle .img img {
+  height: 40px;
+  width: 40px;
+}
+.otherArticle .info {
+  max-width: 457px;
+}
+.lateralImages img {
+  height: 190px;
+  margin-left: 50px;
+}
+.otherArticle .article {
+  margin-top: 60px;
+  height: 190px;
+}
+
+.article:last-of-type {
+  margin-bottom: 50px;
+}
+.text {
+  margin-top: 20px;
+  transform: translateY(-20px);
+}
+.otherArticle .time {
+  width: 457px;
+  font-size: 0.8rem;
+  transform: translateY(-25px);
+}
+.otherArticle .img {
+  margin-top: 0;
+}
+.button2 {
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font: inherit;
+  padding: 10px;
+
+  color: gray;
+}
+.time div {
+  display: flex;
+  align-items: center;
+}
+.otherArticle .time {
+  color: rgb(175, 173, 173);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookmark {
+  border: none;
+  background: none;
+}
+
+.secondPart {
+  display: flex;
+}
+
+.discoverTitle {
+  margin-top: 85px;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.discoverButtons,
+.links,
+hr {
+  margin-left: 100px;
+}
+.discoverButton {
+  background: none;
+  color: #777373;
+
+  border: solid 0.7px rgb(219 205 205 / 60%);
+  padding: 12px 22px;
+  border-radius: 5px;
+  flex: 1 1 calc(33.33% - 10px);
+
+  display: inline-block;
+  flex: 0 1 auto;
+}
+.discover {
+  margin-right: 370px;
+}
+.discoverButtons {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+  margin-top: 33px;
+}
+hr {
+  margin-top: 50px;
+  height: 1.8px;
+  background-color: rgb(219 205 205 / 60%);
+  border: none;
+}
+.links a {
+  text-decoration: none;
+  color: #777373;
+}
+.links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 35px;
 }
