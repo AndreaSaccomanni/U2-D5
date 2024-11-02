@@ -1,17 +1,27 @@
 window.addEventListener("scroll", function () {
   const header = document.getElementById("header");
-  const colorButton = document.querySelector(".colorButton");
-  console.log(colorButton);
+  const colorButton = document.getElementById("getStarted");
   const stayCurious = document.querySelector(".stayCurious");
-  const stayCuriousBottom = stayCurious.getBoundingClientRect().bottom;
+  const discoverDiv = document.querySelector(".discover");
 
-  if (stayCuriousBottom < 0) {
-    // Quando l'header esce dal div stayCurious
+  const headerBottom = header.getBoundingClientRect().bottom;
+  const stayCuriousBottom = stayCurious.getBoundingClientRect().bottom;
+  const discoverTop = discoverDiv.getBoundingClientRect().top;
+
+  if (headerBottom > stayCuriousBottom) {
     header.classList.add("header-scrolled");
+    colorButton.classList.remove("colorButton");
     colorButton.classList.add("colorButton-scrolled");
+    console.log(colorButton);
   } else {
-    // Quando l'header è ancora all'interno del div stayCurious
     header.classList.remove("header-scrolled");
     colorButton.classList.remove("colorButton-scrolled");
+    colorButton.classList.add("colorButton");
+  }
+
+  if (headerBottom >= discoverTop) {
+    discoverDiv.classList.add("sticky");
+  } else {
+    discoverDiv.classList.remove("sticky");
   }
 });
